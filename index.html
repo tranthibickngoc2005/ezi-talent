@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EzI Talent – Tuyển Dụng Nhân Tài</title>
+  <meta name="description" content="EzI Talent tuyển dụng nhân tài công nghệ hàng đầu. Tham gia đội ngũ chuyên nghiệp, môi trường năng động, phát triển không giới hạn." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.54 15.46 0 12.34 0c-1.74 0-3.41.81-4.5 2.09L12 6.5l4.16-4.41C17.37 2.04 19 3.34 19 4.66c0 .7-.34 1.34-.85 1.79L17.5 7H20c.55 0 1 .45 1 1v11H3V8c0-.55.45-1 1-1h4.27l-1.25-1.25C6.54 5.29 6 4.5 6 3.6c0-1.49 1.21-2.6 2.66-2.6.84 0 1.62.38 2.13.98L12 3.5l1.21-1.52A3.6 3.6 0 0 1 13.34 2h-.01L6.68 8.75A4.34 4.34 0 0 0 6 11c0 2.21 1.79 4 4 4s4-1.79 4-4c0-.92-.32-1.75-.85-2.42L10.5 7H4V19h16V8c0-1.1-.9-2-2-2z"/></svg>
+      </div>
+      EzI Talent
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="active">Trang chủ</a>
+      <a href="index.html#jobs">Tuyển dụng</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow" id="job-count-eyebrow">🚀 Đang tuyển dụng <span id="job-count">3</span> vị trí</div>
+      <h1 class="hero-title">Kiến tạo tương lai<br/><span>cùng EzI Talent</span></h1>
+      <p class="hero-desc">Tham gia đội ngũ 500+ chuyên gia công nghệ hàng đầu. Môi trường năng động, thu nhập cạnh tranh, cơ hội thăng tiến không giới hạn.</p>
+      <div class="hero-actions">
+        <a href="#jobs" class="hero-btn-main">Xem vị trí tuyển dụng</a>
+        <a href="#about" class="hero-btn-outline">Về chúng tôi</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num">500+</span><span class="hero-stat-label">Nhân viên</span></div>
+
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-num">96%</span><span class="hero-stat-label">Hài lòng</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-float">
+        <div class="hcf-icon">💼</div>
+        <div><div class="hcf-title">Frontend Developer</div><div class="hcf-sub">Mới đăng · TP. HCM</div></div>
+        <span class="badge badge-new">Mới</span>
+      </div>
+      <div class="hero-card-float hcf2">
+        <div class="hcf-icon">📊</div>
+        <div><div class="hcf-title">Business Analyst</div><div class="hcf-sub">15 - 25 triệu</div></div>
+        <span class="badge badge-hot">Hot</span>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="office_banner.png" alt="EzI Talent office" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat-item">
+      <div class="stat-icon">🏢</div>
+      <div><div class="stat-num">2010</div><div class="stat-label">Năm thành lập</div></div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-icon">👥</div>
+      <div><div class="stat-num">500+</div><div class="stat-label">Nhân viên</div></div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-icon">🌏</div>
+      <div><div class="stat-num">15+</div><div class="stat-label">Quốc gia đối tác</div></div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-icon">🏆</div>
+      <div><div class="stat-num">50+</div><div class="stat-label">Giải thưởng</div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- JOBS SECTION -->
+<section class="jobs-section" id="jobs">
+  <div class="container">
+
+    <div class="jobs-header">
+      <div>
+        <h2 class="section-title">Vị trí tuyển dụng</h2>
+        <p class="jobs-subtitle">Khám phá cơ hội nghề nghiệp phù hợp với bạn</p>
+      </div>
+    </div>
+
+    <div class="jobs-list" id="jobs-list">
+
+      <div class="job-card" data-cat="tech">
+        <div class="job-icon">💻</div>
+        <div class="job-info">
+          <div class="job-title-row">
+            <span class="job-title">Frontend Developer</span>
+            <span class="badge badge-hot">Hot</span>
+          </div>
+          <div class="job-company">EzI Talent (Chi nhánh Đồng Nai)</div>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Remote / TP. HCM</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>Fulltime</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Thỏa thuận</span>
+          </div>
+        </div>
+        <a href="job-detail.html" class="btn-detail">Xem chi tiết →</a>
+      </div>
+
+      <div class="job-card" data-cat="tech">
+        <div class="job-icon">🔧</div>
+        <div class="job-info">
+          <div class="job-title-row">
+            <span class="job-title">Kỹ Thuật Viên Bảo Trì</span>
+            <span class="badge badge-new">Mới</span>
+          </div>
+          <div class="job-company">EzI Talent (Chi nhánh TP. HCM)</div>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Quận 3, TP. HCM</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>Fulltime</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>10 – 15 triệu</span>
+          </div>
+        </div>
+        <a href="job-detail.html" class="btn-detail">Xem chi tiết →</a>
+      </div>
+
+      <div class="job-card" data-cat="biz">
+        <div class="job-icon">📋</div>
+        <div class="job-info">
+          <div class="job-title-row">
+            <span class="job-title">EHS Officer</span>
+            <span class="badge badge-urgent">Gấp</span>
+          </div>
+          <div class="job-company">EzI Talent (Chi nhánh Đồng Nai)</div>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Nhơn Trạch, Đồng Nai</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>Fulltime</span>
+            <span class="job-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Thỏa thuận</span>
+          </div>
+        </div>
+        <a href="job-detail.html" class="btn-detail">Xem chi tiết →</a>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about-section" id="about">
+  <div class="container">
+
+    <div class="jobs-header">
+      <div>
+        <h2 class="section-title">Về chúng tôi</h2>
+        <p class="jobs-subtitle">Hơn 15 năm đồng hành cùng nhân tài Việt Nam</p>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <div class="about-card-body">
+        <div class="about-card-content">
+          <p class="about-desc">
+            Thành lập từ năm <strong>2010</strong>, <strong>EzI Talent</strong> là đơn vị cung ứng nhân lực chuyên nghiệp với hơn <strong>15 năm kinh nghiệm</strong> trong lĩnh vực tuyển dụng và phát triển nguồn nhân lực tại Việt Nam.
+          </p>
+          <p class="about-desc">
+            Chúng tôi kết nối hàng nghìn ứng viên tài năng với các doanh nghiệp hàng đầu mỗi năm, xây dựng môi trường làm việc sáng tạo, bền vững và lấy con người làm trung tâm.
+          </p>
+        </div>
+        <div class="about-card-image">
+          <img src="team_photo.png" alt="Đội ngũ EzI Talent" />
+        </div>
+      </div>
+      <div class="about-highlights">
+        <div class="about-hl-item">
+          <span class="about-hl-label">Mã số thuế</span>
+          <span class="about-hl-val">0312345678</span>
+        </div>
+        <div class="about-hl-divider"></div>
+        <div class="about-hl-item">
+          <span class="about-hl-label">Quy mô</span>
+          <span class="about-hl-val">500 – 1.000 nhân viên</span>
+        </div>
+        <div class="about-hl-divider"></div>
+        <div class="about-hl-item">
+          <span class="about-hl-label">Lĩnh vực</span>
+          <span class="about-hl-val">Tuyển dụng & Nhân sự</span>
+        </div>
+        <div class="about-hl-divider"></div>
+        <div class="about-hl-item">
+          <span class="about-hl-label">Địa chỉ</span>
+          <span class="about-hl-val">Quận 3, TP. Hồ Chí Minh</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-header">
+      <h2 class="section-title">Tại sao chọn EzI Talent?</h2>
+      <p>Chúng tôi không chỉ cung cấp việc làm – chúng tôi xây dựng sự nghiệp</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Thu nhập cạnh tranh</h3>
+        <p>Lương thưởng hấp dẫn, review 2 lần/năm, bonus hiệu suất không giới hạn theo KPI.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📈</div>
+        <h3>Thăng tiến rõ ràng</h3>
+        <p>Lộ trình career path minh bạch, đào tạo nội bộ và hỗ trợ học bổng chuyên môn.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌐</div>
+        <h3>Môi trường quốc tế</h3>
+        <p>Làm việc cùng chuyên gia từ 15+ quốc gia, cơ hội công tác nước ngoài.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏖️</div>
+        <h3>Work-life balance</h3>
+        <p>Chính sách nghỉ phép linh hoạt, team building hàng quý, văn hóa làm việc lành mạnh.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏥</div>
+        <h3>Phúc lợi toàn diện</h3>
+        <p>Bảo hiểm sức khỏe cao cấp, khám sức khỏe định kỳ, hỗ trợ chi phí giáo dục.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Công nghệ tiên tiến</h3>
+        <p>Làm việc với stack công nghệ mới nhất, nghiên cứu & phát triển sản phẩm thực tế.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          EzI Talent
+        </div>
+        <p>Đồng hành cùng sự phát triển của bạn. Chúng tôi xây dựng môi trường làm việc sáng tạo và bền vững.</p>
+        <div class="footer-socials">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">in</a>
+          <a href="#" title="LinkedIn">li</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <div class="contact-item"><span>📞</span> 0079639253</div>
+        <div class="contact-item"><span>📞</span> 0379107901</div>
+        <div class="contact-item"><span>✉️</span> contact@techcorp.vn</div>
+        <div class="contact-item"><span>📍</span> Quận 3, TP. Hồ Chí Minh</div>
+      </div>
+      <div class="footer-col">
+        <h4>Giờ hoạt động</h4>
+        <div class="contact-item"><span>🕐</span>Thứ 2 – Thứ 7: 07:00 – 22:00</div>
+        <div class="contact-item"><span>🕐</span>Chủ nhật: 08:00 – 17:00</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 EzI Talent. Reliability, Growth & Innovation.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Bảo mật</a>
+        <a href="#">Tài khoản</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+
+// Auto-count job listings
+(function() {
+  const count = document.querySelectorAll('#jobs-list .job-card').length;
+  const el = document.getElementById('job-count');
+  if (el && count > 0) el.textContent = count;
+})();
+
+// Animate on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.job-card, .why-card, .stat-item').forEach(el => {
+  el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.visible').forEach(el => {
+    el.style.opacity = '1'; el.style.transform = 'translateY(0)';
+  });
+});
+const obs2 = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.job-card, .why-card').forEach(el => obs2.observe(el));
+</script>
+<script>
+function toggleNav() {
+  const btn = document.getElementById("nav-toggle");
+  const links = document.getElementById("nav-links");
+  btn.classList.toggle("open");
+  links.classList.toggle("open");
+}
+// Close nav when a link is clicked
+document.querySelectorAll(".nav-links a").forEach(a => {
+  a.addEventListener("click", () => {
+    document.getElementById("nav-toggle").classList.remove("open");
+    document.getElementById("nav-links").classList.remove("open");
+  });
+});
+</script>
+</body>
+</html>
